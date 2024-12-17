@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Smart Glove</title>
+    <style>
+        .main{
+        background: url('/wd_grid2.jpg');
+        width: 100%;
+        height: 600px;
+    }
+    .animated-text {
+      font-size: 20px;
+      animation: fade 10s infinite;
+      color: white;
+      padding-top: 300px;
+      padding-left: 150px;
+    }
+    .img1{
+        padding-left: 150px;
+        padding-top: 60px;
+    }
+    .link1{
+        padding-top: 60px;
+        padding-left: 200px;
+        color: white;
+        font-size: large;
+    }
+    .link1:hover{
+        color: rgb(102, 40, 173);
+    }
+    .link2{
+        padding-top: 60px;
+        padding-left: 20px;
+        color: white;
+        font-size: large;
+    }
+    .link2:hover{
+        color: rgb(102, 40, 173);
+    }
+    @keyframes fade {
+      0%, 100% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    .button1{
+        height: 40px ;
+         width:100px; 
+         border-radius: 20px; 
+         margin-right: 20px;
+         background-color: rgb(102, 40, 173);
+         color: white;
+    }
+    .button1:hover{
+        background-color: black;
+        color: rgb(102, 40, 173);
+    }
+    .button2{
+        height: 40px ;
+         width:100px; 
+         border-radius: 20px; 
+         margin-right: 20px;
+         background-color:black;
+         color: white;
+    }
+    .button2:hover{
+        background-color: white;
+        color: black;
+    }
+    .logo{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        border-radius: 50%;
+        margin-left: 200px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s ease;
+    }
+    .logo:hover{
+        background-color: rgb(102, 40, 173);
+    }
+    .logo:hover img{
+        filter: brightness();
+    }
+    .logo1{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        border-radius: 50%;
+        margin-left: 30px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+    }
+    .logo1 img{
+        width: 100%;
+        height: 100%;
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s ease;
+    }
+    .logo1:hover{
+        background-color: rgb(102, 40, 173);
+    }
+    .logo1:hover img{
+        filter: brightness(0);
+    }
+        .content {
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #007acc;
+        }
+        .order-form {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .order-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .order-form input, .order-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .order-form button {
+            width: 100%;
+            padding: 10px;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .order-form button:hover {
+            background: #005f99;
+        }
+        .summary {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9f5ff;
+            border-left: 5px solid #007acc;
+        }
+        footer {
+            background-color: #1f1f28; 
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .footer-column {
+            flex: 1 1 250px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .footer-column p,
+        .footer-column a {
+            color: #ccc;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-column a:hover {
+            color: #fff;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        border-radius: 50%;
+        margin-left: 0px;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+        }
+        .social-icons a img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s ease;
+        }
+        .social-icons a:hover{
+            background-color: rgb(102, 40, 173);
+        }
+        .social-icons a img:hover{
+            filter: brightness(0);
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info strong {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="/image.png" class="img1">
+        <a href="/home.html" class="link1">Home</a>
+        <a href="/about.html" class="link2">About Me</a>
+        <a href="/services.html" class="link2">Services</a>
+        <a href="/gallerly.html" class="link2">Gallery</a>
+        <a href="/contact.html" class="link2">Contact</a>
+        <a href="https://www.facebook.com/" class="logo" target="_blank">
+            <img src="/facebook_logo.png"></a>
+        <a href="https://in.linkedin.com/" class="logo1" target="_blank">
+            <img src="/linkedin_logo.png"></a>
+        <a href="https://x.com/?lang=en-in" class="logo1" target="_blank">
+            <img src="/twitter_logo.png"></a>
+  <div class="animated-text">
+    <h2>Services</h2>
+    <button class="button1">Our Services</button>
+    <button class="button2">Contact Me</button>
+</div>
+</div>
+    <div class="content">
+        <h2>Fill in the details below to join a session.</h2>
+        <form class="order-form" id="orderForm">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="plan">Plan</label>
+            <select id="plan" name="model" required>
+                <option value="">--Select a Plan--</option>
+                <option value="standard">Startup</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <button type="button" onclick="buyplan()">Buy Plan and Join</button>
+        </form>
+    </div>
+    <footer>
+        <h2 align="center">Wanna join our session?</h2>
+        <h2 align="center">Sign Up to join our session
+        <a href="/login.html" style="color: #0073e6; font-size: 15px;">Sign in</a>
+        </h2>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3><span style="background-color: #8a63d2; color: white; padding: 5px 10px; border-radius: 5px;">Z</span>OOMIN</h3>
+            <p>
+                I'm a professional photographer based in India, capturing timeless stories through my lens. Whether it's a wedding, portrait, or the breathtaking landscapes of India, I strive to turn fleeting moments into memories you'll cherish forever.<br> Capture your priceless moments with me.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="/facebook_logo.png"></a>
+                <a href="https://in.linkedin.com/" target="_blank">
+                    <img src="/linkedin_logo.png"></a>
+                <a href="https://x.com/?lang=en-in" target="_blank">
+                    <img src="/twitter_logo.png"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <a href="/about.html" >About Me</a>
+            <a href="/services.html" >Services</a>
+            <a href="/gallerly.html" >Gallery</a>
+            <a href="/contact.html" >Contact</a>
+        </div>
+        <div class="footer-column contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Phone</strong></p>
+            <p>+918858980323</p>
+            <p><strong>Email</strong></p>
+            <p>Maria2006@gmail.com</p>
+            <p><strong>Office Location</strong></p>
+            <p>KIET, Ghaziabad</p>
+        </div>
+    </div>
+    </footer>
+
+    <script>
+        function buyplan() {
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const plan = document.getElementById('plan').value;
+
+            if (fullName && email && plan) {
+                alert("You have now access to our plans.");
+                window.location.href="home.html";
+            } else {
+                alert('Please fill out all fields before buying plan.');
+            }
+        }
+    </script>
+</body>
+</html>
